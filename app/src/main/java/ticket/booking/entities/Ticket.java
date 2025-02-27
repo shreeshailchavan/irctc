@@ -9,4 +9,9 @@ public class Ticket {
     private String destination;
     private Date dateOfTravel;
     private Train train;
+
+
+    public String getTicketInfo(){
+        return String.format("Ticked Id : %s belongs to User : %s from %s to %s on %s",this.ticketId,this.userId,this.source,this.destination,this.dateOfTravel);
+    }
 }
