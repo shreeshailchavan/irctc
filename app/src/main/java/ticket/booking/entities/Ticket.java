@@ -14,4 +14,8 @@ public class Ticket {
     public String getTicketInfo(){
         return String.format("Ticked Id : %s belongs to User : %s from %s to %s on %s",this.ticketId,this.userId,this.source,this.destination,this.dateOfTravel);
     }
+
+    public String getTicketId(){
+        return this.ticketId;
+    }
 }
